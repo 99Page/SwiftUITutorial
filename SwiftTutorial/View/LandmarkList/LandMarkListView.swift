@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LandMarkListView: View {
     
+    @State private var lastShowFavoritesOnly = true
     @State private var showFavoritesOnly = true
     @EnvironmentObject var landmarkViewModel: LandmarkViewModel
     
@@ -35,6 +36,13 @@ struct LandMarkListView: View {
                 }
             }
             .navigationTitle("Landmarks")
+            .onDisappear {
+                lastShowFavoritesOnly = showFavoritesOnly
+                showFavoritesOnly = false
+            }
+            .onAppear {
+                showFavoritesOnly = lastShowFavoritesOnly
+            }
         }
     }
 }
