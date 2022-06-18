@@ -10,6 +10,13 @@ import Foundation
 class LandmarkViewModel: ObservableObject {
     @Published var landmarks: [LandMarkModel] = load("landmarkData.json")
     
+    var features: [LandMarkModel] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
+    var categories: [String: [LandMarkModel]] {
+        Dictionary(grouping: landmarks, by: { $0.category.rawValue })
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

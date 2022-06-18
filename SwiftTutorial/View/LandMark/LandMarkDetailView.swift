@@ -65,7 +65,7 @@ struct LandMarkDetailView_Previews: PreviewProvider {
     
     static let landmarkViewModel = LandmarkViewModel()
     static var previews: some View {
-        LandMarkDetailView(landmark: LandmarkViewModel().landmarks[0])
+        LandMarkDetailView(landmark: LandmarkViewModel().landmarks[2])
             .environmentObject(landmarkViewModel)
     }
 }
