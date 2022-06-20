@@ -11,7 +11,7 @@ struct LandMarkListView: View {
     
     @State private var lastShowFavoritesOnly = true
     @State private var showFavoritesOnly = true
-    @EnvironmentObject var landmarkViewModel: LandmarkViewModel
+    @EnvironmentObject var landmarkViewModel: ViewModel
     
     var fillteredLanMarks: [LandMarkModel] {
         landmarkViewModel.landmarks.filter { landmark in

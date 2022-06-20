@@ -29,6 +29,6 @@ struct CategoryItem: View {
 
 struct CategoryItem_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItem(landmark: LandmarkViewModel().landmarks[1])
+        CategoryItem(landmark: ViewModel().landmarks[1])
     }
 }

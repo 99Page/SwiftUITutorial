@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct SwiftTutorialApp: App {
     
-    @StateObject private var landmarkViewModel = LandmarkViewModel()
+    @StateObject private var landmarkViewModel = ViewModel()
     
     var body: some Scene {
         WindowGroup {

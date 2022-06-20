@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoriteButton: View {
     
-    @EnvironmentObject var landmarkViewModel: LandmarkViewModel
+    @EnvironmentObject var landmarkViewModel: ViewModel
     var index: Int
     
     var body: some View {

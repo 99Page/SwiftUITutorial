@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LandMarkDetailView: View {
     
-    @EnvironmentObject var landmarkViewModel: LandmarkViewModel
+    @EnvironmentObject var landmarkViewModel: ViewModel
     var landmark: LandMarkModel
     
     var landmarkIndex: Int {
@@ -63,9 +63,9 @@ struct LandMarkDetailView: View {
 
 struct LandMarkDetailView_Previews: PreviewProvider {
     
-    static let landmarkViewModel = LandmarkViewModel()
+    static let landmarkViewModel = ViewModel()
     static var previews: some View {
-        LandMarkDetailView(landmark: LandmarkViewModel().landmarks[2])
+        LandMarkDetailView(landmark: ViewModel().landmarks[2])
             .environmentObject(landmarkViewModel)
     }
 }

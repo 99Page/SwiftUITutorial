@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryHome: View {
     
-    @EnvironmentObject var viewModel: LandmarkViewModel
+    @EnvironmentObject var viewModel: ViewModel
     
     var body: some View {
         NavigationView {
@@ -34,6 +34,6 @@ struct CategoryHome: View {
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHome()
-            .environmentObject(LandmarkViewModel())
+            .environmentObject(ViewModel())
     }
 }

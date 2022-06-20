@@ -7,8 +7,9 @@
 
 import Foundation
 
-class LandmarkViewModel: ObservableObject {
+class ViewModel: ObservableObject {
     @Published var landmarks: [LandMarkModel] = load("landmarkData.json")
+    var hikes: [HikeModel] = load("hikeData.json")
     
     var features: [LandMarkModel] {
         landmarks.filter { $0.isFeatured }

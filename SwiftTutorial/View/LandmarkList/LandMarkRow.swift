@@ -33,7 +33,7 @@ struct LandMarkRow: View {
 
 struct LandMarkRow_Previews: PreviewProvider {
     
-    static var landmarks = LandmarkViewModel().landmarks
+    static var landmarks = ViewModel().landmarks
     
     static var previews: some View {
         LandMarkRow(landmark: landmarks[1])
