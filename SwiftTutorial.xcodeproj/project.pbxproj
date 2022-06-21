@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1506AB712861FB25008D15FC /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506AB702861FB25008D15FC /* ProfileEditor.swift */; };
 		151ECFE628604CD300D1995A /* HikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151ECFE528604CD200D1995A /* HikeModel.swift */; };
 		151ECFE828605A5200D1995A /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 151ECFE728605A5200D1995A /* hikeData.json */; };
 		151ECFEE28605A9F00D1995A /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151ECFEA28605A9F00D1995A /* GraphCapsule.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1506AB702861FB25008D15FC /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		151ECFE528604CD200D1995A /* HikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeModel.swift; sourceTree = "<group>"; };
 		151ECFE728605A5200D1995A /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		151ECFEA28605A9F00D1995A /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				15AF566D285E00A300274B72 /* ProfileHost.swift */,
+				1506AB702861FB25008D15FC /* ProfileEditor.swift */,
 				15AF566F285E00EF00274B72 /* ProfileSummary.swift */,
 			);
 			path = Profile;
@@ -438,6 +441,7 @@
 				153389AA285DB8460077D2B5 /* CategoryRow.swift in Sources */,
 				15558B3C28560D0700553951 /* BadgeSymbol.swift in Sources */,
 				1598D04B2852E48F00929C8E /* ContentView.swift in Sources */,
+				1506AB712861FB25008D15FC /* ProfileEditor.swift in Sources */,
 				1598D0492852E48F00929C8E /* SwiftTutorialApp.swift in Sources */,
 				15A153DB28548AC80062E46B /* BadgeBackground.swift in Sources */,
 				151ECFE628604CD300D1995A /* HikeModel.swift in Sources */,

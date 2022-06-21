@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileSummary: View {
     
+    @EnvironmentObject var viewModel: ViewModel
     var profile: Profile
     
     var body: some View {
@@ -46,7 +47,10 @@ struct ProfileSummary: View {
                     Text("Recent Hikes")
                         .font(.headline)
                     
+                    HikeView(hike: viewModel.hikes[0])
                 }
+                
+                
             }
         }
     }
