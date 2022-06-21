@@ -52,9 +52,6 @@ struct HikeView: View {
                 HikeDetail(hike: hike)
                     .transition(.moveAndFate)
             }
-            
-            Text("Test")
-                .padding(.top, 30)
         }
     }
 }

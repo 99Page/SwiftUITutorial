@@ -15,6 +15,12 @@ struct ProfileHost: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
+                if editMode?.wrappedValue == .active {
+                    Button("Cancle", role: .cancel) {
+                        draftProfile = viewModel.profile
+                        editMode?.animation().wrappedValue = .inactive
+                    }
+                }
                 Spacer()
                 EditButton()
             }
@@ -22,7 +28,13 @@ struct ProfileHost: View {
             if editMode?.wrappedValue == .inactive {
                 ProfileSummary(profile: viewModel.profile)
             } else {
-                Text("Profile Editor")
+                ProfileEditor(profile: $draftProfile)
+                    .onAppear {
+                        draftProfile = viewModel.profile
+                    }
+                    .onDisappear {
+                        viewModel.profile = draftProfile
+                    }
             }
         }
         .padding()
